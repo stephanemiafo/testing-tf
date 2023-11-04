@@ -21,7 +21,7 @@ locals {
 
 locals {
   vpc_tags = {
-    Name = "my_vpc-${random_integer.tag.id}-${var.aws_region}-${var.aws_env["0"]}"
+    Name       = "my_vpc-${random_integer.tag.id}-${var.aws_region}-${var.aws_env["0"]}"
     Managed_By = "Terraform"
     Region     = var.aws_region
   }
